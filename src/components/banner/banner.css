@@ -1,0 +1,163 @@
+.banner {
+	width: 100vw;
+	max-width: 1932px;
+	aspect-ratio: 1932/968;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.banner__content {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding: 68px 60px;
+	border-radius: 59px;
+	background-color: var(--brands);
+}
+
+.banner__left {
+	flex-shrink: 0;
+	max-width: 45%;
+}
+
+.banner__img {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	border-radius: inherit;
+	overflow: hidden;
+	margin-left: -60px;
+}
+
+.banner__right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.banner__title-wrapper {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-bottom: 20px;
+	max-width: 480px;
+}
+
+.banner__title {
+	font-weight: 900;
+	font-size: 96px;
+	line-height: 1.25;
+	margin-left: 85px;
+	margin-bottom: 0;
+}
+
+.highlight {
+	position: relative;
+	display: inline-block;
+	font-size: 96px;
+}
+
+.highlight--yellow {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	transform: translateY(20px);
+}
+
+.banner__text-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.banner__text-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	text-align: right;
+	margin-right: calc(25%);
+}
+
+.banner__desc {
+	margin-right: 5px;
+	margin-bottom: 25px;
+	font-size: 32px;
+	line-height: 1.2;
+	text-align: right;
+}
+
+.banner__desc--date {
+	font-weight: bold;
+	font-size: 32px;
+	text-align: right;
+	margin-bottom: 5px;
+}
+
+.banner__btn-wrapper {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 20px;
+	margin-right: 320px;
+}
+
+.banner__btn {
+	padding: 18px 40px;
+	background: #000000;
+	border-radius: 10px;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 1.5;
+	letter-spacing: -0.05em;
+	color: #fff;
+	text-decoration: none;
+}
+
+@media (max-width: 768px) {
+	.banner__content {
+		flex-direction: column;
+		align-items: center;
+		padding: 30px;
+	}
+
+	.banner__left {
+		max-width: 100%;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.banner__right {
+		align-items: center;
+	}
+
+	.banner__title-wrapper {
+		align-items: center;
+		text-align: center;
+	}
+
+	.banner__text-wrapper {
+		align-items: center;
+		text-align: center;
+	}
+
+	.banner__text-container {
+		margin-right: 0;
+	}
+
+	.banner__btn-wrapper {
+		justify-content: center;
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 1932px) {
+	.banner {
+		max-width: 100%;
+	}
+}
+
+.highlight--yellow span {
+	color: white;
+}

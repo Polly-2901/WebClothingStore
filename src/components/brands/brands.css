@@ -1,0 +1,10 @@
+.brands {
+	padding: 60px 0 55px;
+}
+
+.brands__list {
+	display: flex;
+	align-items: center;
+	column-gap: 120px;
+	mix-blend-mode: multiply;
+}
